@@ -5,21 +5,21 @@ function mudarCenario() {
     const [definirHora, definirMinuto] = input.split(":");
     const hora = parseInt(definirHora);
     const minuto = parseInt(definirMinuto);
+    var imagens = window.document.getElementById('img-manha')
 
     let backgroundColor;
 
     if ((hora >= 6 && hora < 15)) {
-      
-      backgroundColor = "#ADD8E6"; 
+      imagens.src = 'imagem-manha.jpg'
+      document.body.style.background = '#ADD8E6'
     } else if (hora >= 15 && hora < 18) {
-      
-      backgroundColor = "#FFD580"; 
+      imagens.src = 'imagem-tarde.jpg'
+      document.body.style.background = '#FFD580'
     } else {
-     
-      backgroundColor = "#FFD580"; 
+     imagens.src = 'imagem-noite.jpg'
+      document.body.style.background = '#0D214F'
     }
 
-    document.body.style.backgroundColor = backgroundColor;
   }
 
 
