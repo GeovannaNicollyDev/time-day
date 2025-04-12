@@ -1,4 +1,6 @@
 h1{
+    color: white;
+    font-size: 80px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 80px;
     display: flex;
@@ -8,14 +10,14 @@ h1{
 }
 
 .questionTime {
-    color: rgb(242, 217, 252);
+    color: rgb(#b761ec);
     font-style: italic;
-    margin-top: 10rem;
-    margin-bottom: 40rem;margin-left: 30rem;
-    margin-right: 30rem;
-    background: rgb(68, 17, 70);
+    margin-top: 2rem;
+    margin-left: 60rem;
+    margin-right: 60rem;
+    background: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px #b761ec;
-    border: 10px solid rgb(68, 17, 70);
+    border: 10px solid rgb(255, 255, 255);
     border-radius: 10px;
     display: flex;
     flex-direction: column; 
@@ -25,5 +27,74 @@ h1{
   }
 
   body{
-    background-color: rgb(201, 152, 241);
+    background-color: rgb(189, 133, 235);
   }
+
+  #hora{
+    color: #d7b1ee;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px #b761ec;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 50rem;
+    margin-right: 50rem;
+  }
+
+  #img-manha{ 
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 2rem auto; 
+      display: block;    
+    }
+    
+    @media (max-width: 1024px) {
+      h1 {
+        font-size: 60px;
+      }
+    
+      .questionTime {
+        margin: 2rem 10rem;
+      }
+    
+      #hora {
+        font-size: 40px;
+        margin: 2rem 10rem;
+      }
+    
+      #img-manha {
+        width: 300px;
+        height: 300px;
+      }
+    }
+    
+    
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 2rem 1rem;
+      }
+    
+      .questionTime {
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 18px;
+      }
+    
+      #hora {
+        font-size: 30px;
+        margin: 1rem;
+      }
+    
+      #img-manha {
+        width: 250px;
+        height: 250px;
+      }
+    }

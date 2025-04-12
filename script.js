@@ -27,7 +27,7 @@ function mudarCenario() {
       var imagens = window.document.getElementById('img-manha')
       var data = new Date();
       var horaAtual = data.getHours();
-      elementoHora.innerHTML = `A hora atual da sua máquina é ${horaAtual}`;
+      elementoHora.innerHTML = `A hora atual da sua máquina é ${horaAtual}h`;
 
       if(horaAtual >= 0 && horaAtual < 12) {
         imagens.src = 'imagem-manha.jpg'
