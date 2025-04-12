@@ -8,7 +8,7 @@ function mudarCenario() {
     var imagens = window.document.getElementById('img-manha')
 
 
-    if ((hora >= 0 && hora < 12)) {
+    if ((hora >= 6 && hora < 12)) {
       imagens.src = 'imagem-manha.jpg'
       document.body.style.background = '#ADD8E6'
     } else if (hora >= 12 && hora < 18) {
@@ -29,7 +29,7 @@ function mudarCenario() {
       var horaAtual = data.getHours();
       elementoHora.innerHTML = `A hora atual da sua máquina é ${horaAtual}h`;
 
-      if(horaAtual >= 0 && horaAtual < 12) {
+      if(horaAtual >= 6 && horaAtual < 12) {
         imagens.src = 'imagem-manha.jpg'
         document.body.style.background = '#ADD8E6'
         
