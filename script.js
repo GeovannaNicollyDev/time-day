@@ -7,12 +7,11 @@ function mudarCenario() {
     const minuto = parseInt(definirMinuto);
     var imagens = window.document.getElementById('img-manha')
 
-    let backgroundColor;
 
-    if ((hora >= 6 && hora < 15)) {
+    if ((hora >= 0 && hora < 12)) {
       imagens.src = 'imagem-manha.jpg'
       document.body.style.background = '#ADD8E6'
-    } else if (hora >= 15 && hora < 18) {
+    } else if (hora >= 12 && hora < 18) {
       imagens.src = 'imagem-tarde.jpg'
       document.body.style.background = '#FFD580'
     } else {
