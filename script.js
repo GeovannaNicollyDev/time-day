@@ -16,8 +16,35 @@ function mudarCenario() {
       backgroundColor = "#FFD580"; 
     } else {
      
-      backgroundColor = "#000000"; 
+      backgroundColor = "#FFD580"; 
     }
 
     document.body.style.backgroundColor = backgroundColor;
   }
+
+
+    function upload (){
+      var elementoHora = window.document.getElementById('hora');
+      var imagens = window.document.getElementById('img-manha')
+      var data = new Date();
+      var horaAtual = data.getHours();
+      elementoHora.innerHTML = `A hora atual da sua máquina é ${horaAtual}`;
+
+      if(horaAtual >= 0 && horaAtual < 12) {
+        imagens.src = 'imagem-manha.jpg'
+        document.body.style.background = '#ADD8E6'
+        
+      } else if(horaAtual >= 12 && horaAtual < 18 ) {
+         imagens.src = 'imagem-tarde.jpg'
+         document.body.style.background = '#FFD580'
+        
+      } else {
+         imagens.src = 'imagem-noite.jpg'
+         document.body.style.background = '#0D214F'
+        
+      }
+
+      
+     
+  }
+  

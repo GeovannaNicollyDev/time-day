@@ -7,13 +7,24 @@
   
     <title>Time Day</title>
 </head>
-<body>
+<body onload="upload()">
+    <section>
+        <h1>Time Day</h1>
+
+        <div id="hora">
+            <h2>Hora atual da sua máquina</h2>
+        </div>
+
     <div class="questionTime">
-        <h1>Time Dayyyyy</h1>
-        <h2>Informe o horário (HH:MM)</h2>
+        <h2>Se preferir, informe o horário (HH:MM)</h2>
         <input type="time" id="definirHorário">
         <button onclick="mudarCenario()">Confirmar</button>
     </div>
+
+    <div id="imagens">
+        <img id= "img-manha" src="imagem-manha.jpg" alt="imagem-sol-manha">
+    </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
